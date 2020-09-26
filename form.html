@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src=script.js></script>
+        <title>Homepage</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th><a href="index.html">Home</a></th>
+                <th><a href="money.html">Blog</a></th>
+                <th><a href="form.html">Join Us</a></th>
+                <th><a href="contact.html">contact Us</a></th>
+            </tr>
+        </table>
+        <form class="form" name="join" action="thankyou.html" onsubmit="return signUp()">
+            <h5>sign up</h5>
+            <br> Name: <input type="text" name="yname" id="name" placeholder="your name" >
+
+            <br> Y.O.B:<select id="birth" name="birth">
+                            <option value="-1">select</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            </select>
+
+            <br> email: <input type="text" name="yemail" id="email" placeholder="your email">
+            <br>Phone No.: <input type="number" name="yphone" id="phone" placeholder="your phone number">
+            <br> password: <input type="password" name="ypassword" id="password" placeholder="your password">
+            <br><button type="submit" class="btn btn-primary">Sign Up</button>
+            <br>or <h5>sign in</h5>
+        </form>
+        <form class="form" name="joined" onsubmit="return signIn()" action="index.html">
+            <br> email: <input type="text" name="remail" id="email" placeholder="your email">
+            <br>password: <input type="password" name="rpassword" id="password" placeholder="your password">
+            <br>         <input type="submit" class="btn btn-success" name="signin" value="sign in">
+        </form>
+
+    </body>
+</html>
